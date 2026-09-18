@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Mon profil</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/profile.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="/index.html">BATAILLE</a>
+    <div class="auth-status" id="auth-status"></div>
+  </header>
+
+  <main class="container profile-page">
+    <div class="profile-header">
+      <div class="profile-avatar">🎮</div>
+      <p class="profile-pseudo" id="profile-pseudo">…</p>
+      <p class="profile-level" id="profile-level"></p>
+      <div class="xp-bar-track"><div class="xp-bar-fill" id="xp-bar-fill" style="width:0%"></div></div>
+      <p class="xp-bar-label" id="xp-bar-label"></p>
+    </div>
+
+    <div class="profile-stats">
+      <div class="card stat-card">
+        <p class="stat-value" id="stat-games">0</p>
+        <p class="stat-label">Parties jouées</p>
+      </div>
+      <div class="card stat-card">
+        <p class="stat-value" id="stat-best">0</p>
+        <p class="stat-label">Meilleur score</p>
+      </div>
+      <div class="card stat-card">
+        <p class="stat-value" id="stat-wins">0</p>
+        <p class="stat-label">Victoires (défi)</p>
+      </div>
+      <div class="card stat-card">
+        <p class="stat-value" id="stat-losses">0</p>
+        <p class="stat-label">Défaites (défi)</p>
+      </div>
+    </div>
+
+    <p class="streak-banner" id="streak-banner"></p>
+  </main>
+
+  <script type="module" src="/src/pages/profile-page.js"></script>
+</body>
+</html>

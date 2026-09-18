@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Résultat</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/battle-result.css" />
+</head>
+<body>
+
+  <main class="container battle-page">
+    <p class="battle-title" id="battle-title">⚔️ Résultat de la bataille</p>
+
+    <div class="battle-players" id="battle-players">
+      <p>Chargement…</p>
+    </div>
+
+    <p class="battle-waiting" id="battle-waiting" hidden>
+      En attente que ton adversaire termine sa partie. Reviens sur cette page avec le même code, ou rafraîchis.
+    </p>
+
+    <button class="btn btn-secondary" id="btn-refresh" hidden>Rafraîchir</button>
+    <button class="btn btn-primary" id="btn-rematch" hidden>Revanche</button>
+    <a class="btn btn-secondary" href="/index.html">Accueil</a>
+  </main>
+
+  <script type="module" src="/src/pages/battle-result-page.js"></script>
+</body>
+</html>

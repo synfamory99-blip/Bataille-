@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Défier un ami</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/challenge.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="/index.html">BATAILLE</a>
+    <nav class="header-nav">
+      <a href="/leaderboard.html">Classement</a>
+      <a href="/profile.html">Profil</a>
+    </nav>
+    <div class="auth-status" id="auth-status"></div>
+  </header>
+
+  <main class="container challenge-page">
+    <div class="challenge-intro">
+      <h1>🎯 Défier un ami</h1>
+      <p>Même thème, mêmes questions. Que le meilleur gagne.</p>
+    </div>
+
+    <div class="challenge-tabs" role="tablist">
+      <button class="challenge-tab" role="tab" aria-selected="true" data-tab="create">Créer</button>
+      <button class="challenge-tab" role="tab" aria-selected="false" data-tab="join">Rejoindre</button>
+    </div>
+
+    <p class="auth-error" id="challenge-error"></p>
+
+    <div class="challenge-panel is-active" data-panel="create">
+      <p>Choisis un thème :</p>
+      <div class="mini-theme-grid" id="create-theme-grid">
+        <button class="card mini-theme-card" data-category="cote_ivoire"><span class="theme-icon">🇨🇮</span><span class="theme-name">Côte d'Ivoire</span></button>
+        <button class="card mini-theme-card" data-category="football"><span class="theme-icon">⚽</span><span class="theme-name">Football</span></button>
+        <button class="card mini-theme-card" data-category="culture_generale"><span class="theme-icon">🌍</span><span class="theme-name">Culture générale</span></button>
+        <button class="card mini-theme-card" data-category="musique"><span class="theme-icon">🎵</span><span class="theme-name">Musique</span></button>
+        <button class="card mini-theme-card" data-category="drapeaux_pays"><span class="theme-icon">🏳️</span><span class="theme-name">Drapeaux & pays</span></button>
+        <button class="card mini-theme-card" data-category="sciences_technologie"><span class="theme-icon">🧠</span><span class="theme-name">Sciences & techno</span></button>
+      </div>
+      <button class="btn btn-primary" id="btn-create-challenge" disabled>Créer la bataille</button>
+    </div>
+
+    <div class="challenge-panel" data-panel="join">
+      <form id="form-join">
+        <label class="field-label" for="join-code">Code de bataille</label>
+        <input class="field-input join-input" id="join-code" maxlength="5" placeholder="B7K92" autocapitalize="characters" autocomplete="off" required />
+        <button class="btn btn-primary" type="submit" style="margin-top: 12px; width: 100%;">Rejoindre</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="/src/pages/challenge-page.js"></script>
+</body>
+</html>

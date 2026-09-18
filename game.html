@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Partie en cours</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/game.css" />
+</head>
+<body>
+
+  <main class="container game-page" id="game-screen">
+    <div class="game-topbar">
+      <span class="game-progress" id="progress">Question 1 / 10</span>
+      <span class="tag" id="difficulty-tag"></span>
+    </div>
+
+    <p class="game-question" id="question-text"></p>
+
+    <div class="game-options" id="options"></div>
+
+    <p class="game-explanation" id="explanation"></p>
+
+    <div class="game-footer">
+      <button class="btn btn-primary" id="btn-continue" hidden>Continuer</button>
+    </div>
+  </main>
+
+  <div class="container end-screen" id="end-screen" hidden>
+    <p class="end-title" id="end-title">🏆 BRAVO !</p>
+    <p class="end-score" id="end-score"></p>
+    <p class="end-points" id="end-points"></p>
+    <p class="end-xp" id="end-xp"></p>
+    <p class="end-streak" id="end-streak"></p>
+    <a class="btn btn-primary" href="/theme-select.html">Rejouer</a>
+    <button class="btn btn-secondary" id="btn-challenge-friend">Défier un ami</button>
+    <a class="btn btn-secondary" href="/index.html">Accueil</a>
+  </div>
+
+  <script type="module" src="/src/pages/game-page.js"></script>
+</body>
+</html>

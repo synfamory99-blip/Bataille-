@@ -1,0 +1,13 @@
+{
+  "name": "bataille",
+  "private": true,
+  "version": "0.1.0",
+  "description": "BATAILLE — jeu de quiz compétitif. Fonctions serverless (/api) + outils d'administration (scripts/).",
+  "scripts": {
+    "validate:questions": "node scripts/validate-questions.js",
+    "import:questions": "node scripts/import-questions.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}

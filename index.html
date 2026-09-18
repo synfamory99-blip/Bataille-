@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Qui est le plus fort ?</title>
+  <meta name="description" content="Défie tes amis dans des quiz rapides. Réponds. Gagne. Recommence." />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/home.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <span class="logo">BATAILLE</span>
+    <nav class="header-nav">
+      <a href="/leaderboard.html">Classement</a>
+      <a href="/profile.html">Profil</a>
+    </nav>
+    <div class="auth-status" id="auth-status">
+      <a href="/auth.html">Connexion</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shape hero-shape--left" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape--right" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-logo">BATAILLE</p>
+        <p class="hero-slogan">Qui est le plus fort ?</p>
+        <p class="hero-pitch">Défie tes amis. Réponds. Gagne. Recommence.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="btn-play">⚔️ Jouer maintenant</button>
+          <button class="btn btn-secondary" id="btn-challenge">🎯 Défier un ami</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Comment ça marche ?</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <p>Choisis ton thème</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <p>Réponds à 10 questions</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <p>Bats ton adversaire</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Choisis ton camp</h2>
+      <div class="categories-grid">
+        <div class="card category-card">
+          <span class="category-icon">🇨🇮</span>
+          <span class="category-name">Côte d'Ivoire</span>
+          <span class="category-count">100 questions</span>
+        </div>
+        <div class="card category-card">
+          <span class="category-icon">⚽</span>
+          <span class="category-name">Football</span>
+          <span class="category-count">100 questions</span>
+        </div>
+        <div class="card category-card">
+          <span class="category-icon">🌍</span>
+          <span class="category-name">Culture générale</span>
+          <span class="category-count">100 questions</span>
+        </div>
+        <div class="card category-card">
+          <span class="category-icon">🎵</span>
+          <span class="category-name">Musique</span>
+          <span class="category-count">100 questions</span>
+        </div>
+        <div class="card category-card">
+          <span class="category-icon">🏳️</span>
+          <span class="category-name">Drapeaux & pays</span>
+          <span class="category-count">100 questions</span>
+        </div>
+        <div class="card category-card">
+          <span class="category-icon">🧠</span>
+          <span class="category-name">Sciences & technologie</span>
+          <span class="category-count">100 questions</span>
+        </div>
+        <div class="card category-card category-mix">
+          <span class="category-icon">⚡</span>
+          <span class="category-name">BATAILLE MIX</span>
+          <span class="category-count">Questions de tous les thèmes</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--
+    Étape 1 (setup) : cette page est statique et sert à valider l'identité
+    visuelle. Les boutons #btn-play et #btn-challenge ne naviguent nulle
+    part pour l'instant — le routeur et les écrans de jeu seront construits
+    aux étapes suivantes du plan validé (cf. bataille-v1-cadrage.md).
+  -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

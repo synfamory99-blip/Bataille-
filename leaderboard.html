@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Classement</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/profile.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="/index.html">BATAILLE</a>
+    <div class="auth-status" id="auth-status"></div>
+  </header>
+
+  <main class="container leaderboard-page">
+    <div class="leaderboard-intro">
+      <h1>🏆 Classement</h1>
+      <p>Les meilleurs joueurs, toutes catégories confondues.</p>
+    </div>
+
+    <p class="leaderboard-me card" id="leaderboard-me">…</p>
+
+    <div class="leaderboard-list" id="leaderboard-list">
+      <p>Chargement…</p>
+    </div>
+  </main>
+
+  <script type="module" src="/src/pages/leaderboard-page.js"></script>
+</body>
+</html>

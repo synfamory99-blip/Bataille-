@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Choisis ton thème</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/theme-select.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="/index.html">BATAILLE</a>
+    <nav class="header-nav">
+      <a href="/leaderboard.html">Classement</a>
+      <a href="/profile.html">Profil</a>
+    </nav>
+    <div class="auth-status" id="auth-status"></div>
+  </header>
+
+  <main class="container theme-page">
+    <div class="theme-intro">
+      <h1>Choisis ton camp</h1>
+      <p>10 questions t'attendent.</p>
+    </div>
+
+    <div class="theme-grid">
+      <button class="card theme-card" data-category="cote_ivoire">
+        <span class="theme-icon">🇨🇮</span>
+        <span class="theme-name">Côte d'Ivoire</span>
+        <span class="theme-count">Questions de test</span>
+      </button>
+      <button class="card theme-card" data-category="football">
+        <span class="theme-icon">⚽</span>
+        <span class="theme-name">Football</span>
+        <span class="theme-count">Questions de test</span>
+      </button>
+      <button class="card theme-card" data-category="culture_generale">
+        <span class="theme-icon">🌍</span>
+        <span class="theme-name">Culture générale</span>
+        <span class="theme-count">Questions de test</span>
+      </button>
+      <button class="card theme-card" data-category="musique">
+        <span class="theme-icon">🎵</span>
+        <span class="theme-name">Musique</span>
+        <span class="theme-count">Questions de test</span>
+      </button>
+      <button class="card theme-card" data-category="drapeaux_pays">
+        <span class="theme-icon">🏳️</span>
+        <span class="theme-name">Drapeaux & pays</span>
+        <span class="theme-count">Questions de test</span>
+      </button>
+      <button class="card theme-card" data-category="sciences_technologie">
+        <span class="theme-icon">🧠</span>
+        <span class="theme-name">Sciences & technologie</span>
+        <span class="theme-count">Questions de test</span>
+      </button>
+      <button class="card theme-card theme-mix" data-category="mix">
+        <span class="theme-icon">⚡</span>
+        <span class="theme-name">BATAILLE MIX</span>
+        <span class="theme-count">Questions de tous les thèmes</span>
+      </button>
+    </div>
+  </main>
+
+  <script type="module" src="/src/pages/theme-select-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BATAILLE — Connexion</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/pages/auth.css" />
+</head>
+<body>
+
+  <main class="container auth-page">
+    <div class="auth-header">
+      <p class="auth-logo">BATAILLE</p>
+      <p>Connecte-toi pour sauvegarder ton score et ta série.</p>
+    </div>
+
+    <div class="auth-tabs" role="tablist">
+      <button class="auth-tab" role="tab" aria-selected="true" data-tab="signin">Connexion</button>
+      <button class="auth-tab" role="tab" aria-selected="false" data-tab="signup">Inscription</button>
+    </div>
+
+    <p class="auth-error" id="auth-error"></p>
+
+    <form class="auth-form is-active" id="form-signin" data-form="signin">
+      <div>
+        <label class="field-label" for="signin-email">E-mail</label>
+        <input class="field-input" type="email" id="signin-email" required autocomplete="email" />
+      </div>
+      <div>
+        <label class="field-label" for="signin-password">Mot de passe</label>
+        <input class="field-input" type="password" id="signin-password" required autocomplete="current-password" />
+      </div>
+      <button class="btn btn-primary" type="submit">Se connecter</button>
+    </form>
+
+    <form class="auth-form" id="form-signup" data-form="signup">
+      <div>
+        <label class="field-label" for="signup-pseudo">Pseudo</label>
+        <input class="field-input" type="text" id="signup-pseudo" required minlength="3" maxlength="20" autocomplete="nickname" />
+      </div>
+      <div>
+        <label class="field-label" for="signup-email">E-mail</label>
+        <input class="field-input" type="email" id="signup-email" required autocomplete="email" />
+      </div>
+      <div>
+        <label class="field-label" for="signup-password">Mot de passe</label>
+        <input class="field-input" type="password" id="signup-password" required minlength="6" autocomplete="new-password" />
+      </div>
+      <button class="btn btn-primary" type="submit">Créer mon compte</button>
+    </form>
+
+    <div class="auth-divider">ou</div>
+
+    <button class="btn btn-secondary" id="btn-guest">Continuer sans compte</button>
+  </main>
+
+  <script type="module" src="/src/pages/auth-page.js"></script>
+</body>
+</html>
